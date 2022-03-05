@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 html {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: Nunito, sans-serif;
 }
 
 /* Video Background */
@@ -49,7 +49,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .input-container {
@@ -82,7 +82,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: Nunito, sans-serif;
 }
 
 /* Button */
@@ -97,8 +97,13 @@ button {
   color: white;
   cursor: pointer;
   outline: none;
+  transition: all 0.3s ease-in;
 }
 
+button:hover {
+  filter: brightness(110%);
+  transform: translateY(-10px);
+}
 
 
 /* Countdown */
@@ -136,12 +141,13 @@ li span {
   
   video {
     object-fit: cover;          /*fill up the ranage of the screen or container holding it (in this case the vide)*/
-    object-position: 70%;       /*shift video position (focus) horizontally (However, 2 values can be used one for horizontal and the other for vertival)*/
+    object-position: 10%;       /*shift video position (focus) horizontally (However, 2 values can be used one for horizontal and the other for vertival)*/
     margin-top: -1px;
   }
 
   .container {
-
+    min-width: unset;
+    width: 95vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
