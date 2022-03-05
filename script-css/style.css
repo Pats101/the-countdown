@@ -97,11 +97,12 @@ button {
   color: white;
   cursor: pointer;
   outline: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 button:hover {
   filter: brightness(110%);
+  transform: translateY(-10px);
 }
 
 
